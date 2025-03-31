@@ -4,13 +4,18 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   /* я не уверен, что это правильно, но по другому не получилось сделать по пикселям. Надеюсь имеется более изящное решение :D */  
-  padding: 100px 84px 90px 49px;
+  padding: 90px 90px 91px 49px;
 }
 
 .header__logo {
   display: block;
   width: 148px;
+    /* тоже самое, что в комментарии на строке 6 */
+    padding-left: 10px;
+    padding-top: 8px;
+    margin-left: 25px;
 }
+
 
 .header__links-list {
   display: flex;
@@ -31,10 +36,6 @@
   font-size: 18px;
   font-weight: 400px;
   line-height: 135%;
-}
-
-.header__link_active {
-  border-bottom: 1px solid black;
 }
 
 .address {
@@ -65,7 +66,7 @@
 }
 
 .cover__title {
-  margin: 165px 50px 116px 50px;
+  margin: 165px 50px 105px 50px;
 }
 
 .accent-span {
@@ -82,15 +83,13 @@
 
 .accent-span_center {
   text-align: center;
-  /* тоже самое что и строка 6 */
-  padding-left: 30px;
+  padding-left: 30px; /* тоже самое что и строка 6 */
   padding-top: 16px;
 }
 
 .accent-span_right {
-  text-align: right;
-  /* тоже самое что и строка 6 */
-  padding-top: 20px;
+  text-align: right; 
+  padding-top: 20px; /* тоже самое что и строка 6 */
 }
 
 .cover__description {
@@ -100,6 +99,8 @@
 }
 
 .cover__description-text {
+  display: block;
+  line-height: 53px;
   color: #fff;
   font-size: 22px;
   letter-spacing: 3px;
@@ -107,7 +108,10 @@
 }
 
 .bet-button {
-  border: 1px solid #fff;
+  width: 256px;
+  height: 51px;
+  border: 2px solid #fff;
+   margin-left: 10px; /*костыль*/
   font-size: 22px;
   font-weight: 500;
   color: #fff;
@@ -116,11 +120,11 @@
 }
 
 .lots {
-  padding: 24px;
   margin-bottom: 120px;
 }
 
 .lots__heading {
+  margin-left: 60px;
   margin-bottom: 27px;
   color: #000;
   font-size: 40px;
@@ -129,7 +133,7 @@
 
 .lots__card-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
 }
 
@@ -185,13 +189,15 @@
   display: block;
   max-width: 192px;
   margin-top: 30px;
+  margin-left: 61px;
   font-size: 20px;
 }
 
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 24px;
+  padding: 38px 0 0 22px;
+  margin-bottom: 97px;
 }
 
 .about__logo {
@@ -205,9 +211,12 @@
   background: #000;
 }
 
+.about__logo__column{
+  padding-left: 46px;
+}
+
 .about__title {
-  margin-top: 133px;
-  margin-bottom: 100px;
+  margin: 100px 0 100px 0;
   color: #000;
   font-weight: bold;
   font-size: 40px;
@@ -215,11 +224,12 @@
 }
 
 .about__text {
-  font-size: 20px;
+  font-size: 19px;
+  letter-spacing: 1px;
 }
 
 .about__text-margin {
-  margin-bottom: 24px;
+  margin-bottom: 33px;
 }
 
 .footer {
