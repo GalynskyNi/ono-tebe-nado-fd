@@ -1,24 +1,21 @@
 /* место для вашего кода */
-.content-section {
-  width: 1100px;
-  min-height: 100px;
-}
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px;
+  /* я не уверен, что это правильно, но по другому не получилось сделать по пикселям. Надеюсь имеется более изящное решение :D */  
+  padding: 100px 84px 90px 49px;
 }
 
 .header__logo {
   display: block;
-  width: 129px;
+  width: 148px;
 }
 
 .header__links-list {
   display: flex;
-  gap: 24px;
+  /* на глаз под pixel perfect */
+  gap: 33px;
   list-style: circle;
 }
 
@@ -32,11 +29,23 @@
 
 .header__link {
   font-size: 18px;
+  font-weight: 400px;
+  line-height: 135%;
+}
+
+.header__link_active {
+  border-bottom: 1px solid black;
 }
 
 .address {
   justify-self: end;
   max-width: 240px;
+}
+
+.address__link {
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 24.3px;
 }
 
 .cover {
@@ -56,7 +65,7 @@
 }
 
 .cover__title {
-  margin: 165px 50px;
+  margin: 165px 50px 116px 50px;
 }
 
 .accent-span {
@@ -66,18 +75,28 @@
   letter-spacing: 30px;
 }
 
+.no_letter_spacing {
+  display: inline;
+  letter-spacing: 0;
+}
+
 .accent-span_center {
   text-align: center;
+  /* тоже самое что и строка 6 */
+  padding-left: 30px;
+  padding-top: 16px;
 }
 
 .accent-span_right {
   text-align: right;
+  /* тоже самое что и строка 6 */
+  padding-top: 20px;
 }
 
 .cover__description {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  margin: 50px;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
 }
 
 .cover__description-text {
@@ -89,7 +108,8 @@
 
 .bet-button {
   border: 1px solid #fff;
-  padding: 12px 32px;
+  font-size: 22px;
+  font-weight: 500;
   color: #fff;
   text-transform: uppercase;
   background: transparent;
@@ -232,4 +252,8 @@
 .footer__social-icon {
   width: 48px;
   height: 48px;
+}
+
+.footer__menu-link_active {
+  border-bottom: 1px solid black;
 }
