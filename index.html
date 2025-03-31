@@ -13,13 +13,13 @@
     <header class="header content-section">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li class="header__link-list-item header__links-list-item_no-bullit">
+          <li class="header__link-list-item header__link_active header__links-list-item_no-bullit">
             <a href="#cover" class="header__link">Главная</a>
           </li>
-          <li class="header__link-list-item header__link_active">
+          <li class="header__link-list-item">
             <a href="#lots" class="header__link">посмотреть лоты</a>
           </li>
-          <li class="header__link-list-item header__link_active">
+          <li class="header__link-list-item">
             <a href="#about" class="header__link">об аукционе</a>
           </li>
         </ul>
@@ -29,16 +29,18 @@
       </a>
       <address class="address">
         <p>
-          <a href="tel:+99995555555" class="header__link_active"
+          <a href="tel:+99995555555" class="address__link"
             >+9 999 555 5555</a
           >
           <br />
-          <a href="mailto:info@sobaka.ge" class="header__link_active"
+          <a href="mailto:info@sobaka.ge" class="address__link"
             >info@sobaka.ge</a
           >
           <br />
-          наб. Принсенграхт 263- <br />
-          265, Амстердам
+          <div class="address__link">
+            наб. Принсенграхт 263- <br />
+            265, Амстердам
+          </div>
         </p>
       </address>
     </header>
@@ -48,7 +50,7 @@
           <h1 class="cover__title">
             <span class="accent-span accent-span">ОНО</span>
             <span class="accent-span accent-span_center">ТЕБЕ</span>
-            <span class="accent-span accent-span_right">НАДО</span>
+            <span class="accent-span accent-span_right">НАД<div class="no_letter_spacing">О</div></span>
           </h1>
           <div class="cover__description">
             <p class="cover__description-text">
@@ -173,15 +175,15 @@
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-list-item">
-            <a href="#cover" class="footer__menu-link">главная</a>
+            <a href="#cover" class="footer__menu-link footer__menu-link_active">главная</a>
           </li>
           <li class="footer__menu-list-item">
-            <a href="#lots" class="footer__menu-link footer__menu-link_active"
+            <a href="#lots" class="footer__menu-link "
               >посмотреть лоты
             </a>
           </li>
           <li class="footer__menu-list-item">
-            <a href="#about" class="footer__menu-link footer__menu-link_active"
+            <a href="#about" class="footer__menu-link "
               >об аукционе</a
             >
           </li>
