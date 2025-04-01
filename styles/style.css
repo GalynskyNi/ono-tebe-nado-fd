@@ -43,8 +43,16 @@
 }
 
 .address__link {
+  text-decoration: none;
+  font-weight: 400;
   font-size: 18px;
-  font-weight: 400px;
+  line-height: 24.3px;
+  border-bottom: 1px solid black;
+}
+
+.address__text {
+  font-weight: 400;
+  font-size: 18px;
   line-height: 24.3px;
 }
 
@@ -249,21 +257,6 @@
   align-items: flex-start;
   gap: 5px;
 }
-
-.footer__address__link {
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24.3px;
-  border-bottom: 1px solid black;
-}
-
-.footer__address__text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24.3px;
-}
-
 
 .footer__menu-list {
   display: flex;
