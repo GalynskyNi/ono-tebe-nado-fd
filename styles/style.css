@@ -3,19 +3,18 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  /* я не уверен, что это правильно, но по другому не получилось сделать по пикселям. Надеюсь имеется более изящное решение :D */  
+  /* я не уверен, что это правильно, но по другому не получилось сделать по пикселям. Надеюсь имеется более изящное решение :D */
   padding: 90px 90px 91px 49px;
 }
 
 .header__logo {
   display: block;
   width: 148px;
-    /* тоже самое, что в комментарии на строке 6 */
-    padding-left: 10px;
-    padding-top: 8px;
-    margin-left: 25px;
+  /* тоже самое, что в комментарии на строке 6 */
+  padding-left: 10px;
+  padding-top: 8px;
+  margin-left: 25px;
 }
-
 
 .header__links-list {
   display: flex;
@@ -83,13 +82,15 @@
 
 .accent-span_center {
   text-align: center;
-  padding-left: 30px; /* тоже самое что и строка 6 */
+  padding-left: 30px;
+  /* тоже самое что и строка 6 */
   padding-top: 16px;
 }
 
 .accent-span_right {
-  text-align: right; 
-  padding-top: 20px; /* тоже самое что и строка 6 */
+  text-align: right;
+  padding-top: 20px;
+  /* тоже самое что и строка 6 */
 }
 
 .cover__description {
@@ -111,7 +112,8 @@
   width: 256px;
   height: 51px;
   border: 2px solid #fff;
-   margin-left: 10px; /*костыль*/
+  margin-left: 10px;
+  /*костыль*/
   font-size: 22px;
   font-weight: 500;
   color: #fff;
@@ -133,7 +135,7 @@
 
 .lots__card-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
 }
 
@@ -211,7 +213,7 @@
   background: #000;
 }
 
-.about__logo__column{
+.about__logo__column {
   padding-left: 46px;
 }
 
@@ -236,11 +238,32 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   padding: 92px 50px;
+  justify-items: stretch;
 }
 
 .footer__address {
   justify-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
 }
+
+.footer__address__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.3px;
+  border-bottom: 1px solid black;
+}
+
+.footer__address__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.3px;
+}
+
 
 .footer__menu-list {
   display: flex;
@@ -249,8 +272,16 @@
   list-style: none;
 }
 
-.footer__menu-link_active {
+.footer__menu-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.3px;
+  border-bottom: 1px solid black;
   text-decoration: none;
+}
+
+.footer__menu-link_active {
+  border-bottom: none;
 }
 
 .footer__social-list {
@@ -259,11 +290,12 @@
   list-style: none;
 }
 
+.footer__social-list-item {
+  padding: 4px 0 0 8px;
+}
+
 .footer__social-icon {
   width: 48px;
   height: 48px;
 }
 
-.footer__menu-link_active {
-  border-bottom: 1px solid black;
-}
