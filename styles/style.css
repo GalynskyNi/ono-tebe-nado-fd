@@ -4,16 +4,16 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   /* я не уверен, что это правильно, но по другому не получилось сделать по пикселям. Надеюсь имеется более изящное решение :D */
-  padding: 90px 90px 91px 49px;
+  padding: 90px 90px 93px 49px;
 }
 
 .header__logo {
   display: block;
   width: 148px;
   /* тоже самое, что в комментарии на строке 6 */
-  padding-left: 10px;
-  padding-top: 8px;
-  margin-left: 25px;
+  padding-left: 12px;
+  padding-top: 10px;
+  margin-left: 30px;
 }
 
 .header__links-list {
@@ -21,7 +21,7 @@
   /* на глаз под pixel perfect */
   gap: 33px;
   list-style: circle;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .header__links-list-item_no-bullit {
@@ -101,7 +101,7 @@
 
 .accent-span_right {
   text-align: right;
-  padding-top: 20px;
+  padding-top: 18px;
   /* тоже самое что и строка 6 */
 }
 
@@ -116,7 +116,8 @@
   display: block;
   line-height: 53px;
   color: #fff;
-  font-size: 21px;
+  padding: 3px 0px 0px 7px;
+  font-size: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -141,7 +142,7 @@
 
 .lots__heading {
   margin-left: 40px;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   color: #000;
   font-size: 40px;
   text-transform: uppercase;
@@ -178,7 +179,7 @@
 
 .card__title {
   position: relative;
-  margin: 48px 40px 0 40px;
+  margin: 49px 40px 0 40px;
   color: #fff;
   font-size: 22px;
   text-decoration: underline;
@@ -215,7 +216,7 @@
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 38px 0 0 22px;
+  padding: 34px 0 0 22px;
   margin-bottom: 85px;
 }
 
@@ -226,7 +227,7 @@
   width: 240px;
   height: 240px;
   border-radius: 100%;
-  padding: 64px 45px 70px 45px;
+  padding: 70px 45px 70px 45px;
   background: #000;
 }
 
@@ -235,7 +236,7 @@
 }
 
 .about__title {
-  margin: 97px 0 100px 0;
+  margin: 100px 0 100px 0;
   color: #000;
   font-weight: bold;
   font-size: 40px;
@@ -244,6 +245,15 @@
 
 .about__text {
   font-size: 20px;
+  line-height: 24px;
+}
+
+.about__text-first-paragraph {
+  max-width: 688px;
+}
+
+.about__text-second-paragraph {
+  max-width: 693px;
 }
 
 .about__text-margin {
@@ -263,7 +273,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 5px;
 }
 
 .footer__menu-list {
